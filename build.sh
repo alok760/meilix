@@ -240,7 +240,7 @@ cd image && sudo find . -type f -print0 |xargs -0 sudo md5sum |grep -v "\./md5su
 
 # Generate a small temporary ISO so we get an updated boot.cat
 IMAGE_NAME=${IMAGE_NAME:-"Meilix ${release} $(date -u +%Y%m%d_%H%M) - ${arch}"}
-ISOFILE=meilix-${release}-$(date -u +%Y%m%d)-${arch}.iso
+ISOFILE=meilix-${release}-$(date -u +%Y%m%d_%H%M)-${arch}.iso
 #sudo mkisofs -r -V "$IMAGE_NAME" -cache-inodes -J -l \
 sudo genisoimage -r -V "$IMAGE_NAME" -cache-inodes -J -l \
   -b isolinux/isolinux.bin -c isolinux/boot.cat \
