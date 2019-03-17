@@ -101,7 +101,12 @@ cat /usr/share/applications/lxqt-about.desktop
 sed -i '$ a NoDisplay=true' /usr/share/applications/lxqt-about.desktop
 cat /usr/share/applications/lxqt-about.desktop
 
+
 echo "wallpaper exec"
+ls /usr/share/
+ls /usr/share/lxqt/themes
+ls /usr/share/lxqt/themes/meilix
+
 wget "https://transfer.sh/JjhSu/wallpaper.jpg" -O "/usr/share/lxqt/themes/meilix/wallpaper.jpg"
 
 # Switching off screen dimming
