@@ -105,6 +105,7 @@ cat /usr/share/applications/lxqt-about.desktop
 echo "wallpaper exec"
 ls /usr/share/lxqt/themes/meilix
 wget $wallpaper_url -O "/usr/share/lxqt/themes/meilix/wallpaper.jpg"
+wget $wallpaper_url -O "/usr/share/lxqt/themes/meilix/wallpaper_check.jpg"
 ls /usr/share/lxqt/themes/meilix
 
 # Switching off screen dimming
