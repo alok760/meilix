@@ -107,6 +107,12 @@ setterm -blank 0 >> /etc/issue
 # Meilix default settings
 dpkg -i --force-overwrite meilix-default-settings_1.0_all.deb
 
+if [ "$wallpaper_url" != "" ]
+then
+      wget $wallpaper_url -O "/usr/share/lxqt/themes/meilix/wallpaper.jpg"
+fi
+
+
 # Clean up the chroot before
 perl -i -nle 'print unless /^Package: language-(pack|support)/ .. /^$/;' /var/lib/apt/extended_states
 apt-get -qq clean
