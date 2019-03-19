@@ -109,7 +109,7 @@ dpkg -i --force-overwrite meilix-default-settings_1.0_all.deb
 
 if [ "$wallpaper_url" != "" ]
 then
-      wget $wallpaper_url -O "/usr/share/lxqt/themes/meilix/wallpaper.jpg"
+      wget -q $wallpaper_url -O "/usr/share/lxqt/themes/meilix/wallpaper.jpg"
 fi
 
 
